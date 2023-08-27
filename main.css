@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --brand-color:rgb(64, 78, 237);
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav, header {
+    background-color:var(--brand-color);
+}
+
+.container , .container-fluid {
+    max-width: 1260px;
+}
