@@ -1,3 +1,10 @@
+@font-face {
+    font-family: ABC Ginto Nord;
+    font-style: normal;
+    font-weight: 800;
+    src: url(fonts/ABCFont.woff2) format("woff2")
+}
+
 *{
     box-sizing: border-box;
 }
@@ -5,6 +12,20 @@
 :root{
     --brand-color:rgb(64, 78, 237);
 }
+
+@media (min-width: 1200px) {
+
+    body {
+        font-size: 1.2rem !important;
+        font-family: Helvetica, sans-serif ;
+    }
+
+    .h1, h1 {
+        font-size: 4rem !important;
+        font-family: 'ABC Ginto Nord', Helvetica, sans-serif;
+    }
+}
+    
 
 body {
     background: #fff;
@@ -19,4 +40,7 @@ nav, header {
 
 .container , .container-fluid {
     max-width: 1260px;
+    margin: 0 auto;
 }
+
+
