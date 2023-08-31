@@ -10,74 +10,40 @@
 
 }
 body {
-    font-size: .9rem !important;
+    font-size: clamp(.8rem, calc(.8rem+1vw), 1.2rem) !important;
     font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 300 !important;
 }
 
 .h1, h1 {
-    font-size: 2rem !important;
+    font-size: clamp(1.8rem, 8vw, 4rem)  !important;
     font-family: 'ABC Ginto Nord', Helvetica, sans-serif;
 }
 
-h2, h3, h4, h5, h6, div, a, span {
+.h3, h3 {
+    font-family: 'ABC Ginto Nord', Helvetica, sans-serif;
+    font-size: calc(1.6rem + .4vw) !important;
+}
+
+h2, h4, h5, h6, div, a, span {
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 .h2, h2 {
-    font-size: 1.8rem !important;
+    font-size:  clamp(1.8rem, calc(1rem+2vw), 3rem) !important;
     padding-bottom: 1rem !important;
     font-weight: 900 !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
 }
 
 :root{
     --brand-color:rgb(64, 78, 237);
 }
 
-/* // Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap */
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    body {
-        font-size: .9rem !important;
-    }
-    
- }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    body {
-        font-size: 1.1rem !important;
-    }
-    .h1, h1 {
-        font-size: 3rem !important;
-        font-family: 'ABC Ginto Nord', Helvetica, sans-serif;
-    }
-    .h2, h2 {
-        font-size: 2.5rem !important;
-    }
- }
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
-
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-    body {
-        font-size: 1.2rem !important;
-    }
-
-    .h1, h1 {
-        font-size: 4rem !important;
-    }
-
-    .h2, h2 {
-        font-size: 3rem !important;
-    }
-}
     
 
 body {

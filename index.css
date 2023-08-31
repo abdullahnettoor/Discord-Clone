@@ -39,6 +39,16 @@ header {
     margin-right: -320px;
 }
 
+.sparkle-img {
+    width: 531px;
+    margin-bottom: -1rem;
+}
+
+.h4, h4 {
+    font-size: clamp(2rem, 2vw, 3rem) !important; 
+    font-weight: 900 !important;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 /*  No media query since this is the default in Bootstrap */
 
@@ -119,4 +129,8 @@ header {
 
 .h1, h1 {
     font-family: 'ABC Ginto Nord', Helvetica, sans-serif;
+}
+
+.footer-links div{
+    padding-top: 4px;
 }
